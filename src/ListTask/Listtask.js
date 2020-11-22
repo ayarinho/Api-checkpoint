@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { store } from '../Redux/Store/Store'
 import Task from '../Task/Task';
 import '../style.css'
 
@@ -16,9 +15,9 @@ const ListTask = () => {
   <>
    
     {  
-    filter.length>0? <>
+       filter.length>0? <>
       
-      <div className="container_filter" >
+       <div className="container_filter" >
     {
 
         filter.map(item => <Task data={item}/>)
@@ -32,7 +31,7 @@ const ListTask = () => {
     }
      
         <div className="container">
-            {AllSate.length > 0 ? AllSate 
+            { AllSate.length > 0 ? AllSate 
                 .map(item => <Task data={item} />) : null }
 
                 

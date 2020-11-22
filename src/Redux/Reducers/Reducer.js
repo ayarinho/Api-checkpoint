@@ -16,7 +16,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
        
     case Add:
       console.log("reducer", payload);
-
+       
        return { ...state,
        todos: [...todos, payload] 
       
